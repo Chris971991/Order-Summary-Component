@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [To be added](https://your-solution-url.com)
-- Live Site URL: [To be added](https://your-live-site-url.com)
+- Solution URL: [Front End Mentor Solution](https://www.frontendmentor.io/solutions/order-summary-card-solution-sassscss-media-queries-NVAq1YG_u)
+- Live Site URL: [Hosted on Github](https://chris971991.github.io/Order-Summary-Component/)
 
 ### Built with
 
