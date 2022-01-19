@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap);
+
+$primaryPaleBlue: hsl(225, 100%, 94%);
+$primaryPaleBlueAlpha: hsla(225, 100%, 94%, 0.4);
+$primaryBrightBlue: hsl(245, 75%, 52%);
+
+$neutralVeryPale: hsl(225, 100%, 98%);
+$neutralDesaturated: hsl(224, 23%, 55%);
+$neutralDark: hsl(223, 47%, 23%);
+$hover: rgb(0, 162, 255);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: $primaryPaleBlue;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    height: 36rem;
+    width: 20rem;
+    background-color: $neutralVeryPale;
+    border-radius: 16px;
+    box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .card-container {
+    height: 48rem;
+    width: 32rem;
+    background-color: $neutralVeryPale;
+    border-radius: 16px;
+    box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .card-image {
+    width: 100%;
+    height: 15.75rem;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-image {
+    width: 100%;
+    height: 10.75rem;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .summary {
+    text-align: center;
+    padding-top: 1.5rem;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      line-height: 0.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding: 0rem 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .summary {
+    text-align: center;
+    padding-top: 1.5rem;
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 0.1rem;
+    }
+
+    p {
+      padding: 0rem 5rem;
+    }
+  }
+}
+
+p {
+  color: $neutralDesaturated;
+}
+
+@media screen and (min-width: 480px) {
+  .selection-box {
+    height: 7rem;
+    margin: 2rem 4rem;
+    background-color: $primaryPaleBlueAlpha;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .selection-box {
+    height: 5rem;
+    margin: 2rem 2rem;
+    background-color: $primaryPaleBlueAlpha;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  h2,
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+.selection {
+  height: 100%;
+  display: flex;
+
+  img {
+    float: left;
+    padding: 0.4rem;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plan {
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+    float: left;
+    height: 100%;
+    width: 100%;
+    padding: 0rem 0.5rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .plan {
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+    float: left;
+    height: 100%;
+    width: 100%;
+    padding: 0.6rem 0.5rem;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.options {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
+  font-weight: 900;
+  transition: 0.2s ease-in-out;
+
+  a:hover {
+    cursor: pointer;
+    color: $hover;
+  }
+}
+
+a:hover,
+a:active {
+  cursor: pointer;
+  color: $hover;
+  text-decoration: none;
+}
+
+a {
+  color: $primaryBrightBlue;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    .payment {
+      background-color: $primaryBrightBlue;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 900;
+      color: white;
+      border-radius: 12px;
+      border-style: none;
+      padding: 1rem 2rem;
+      box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.3);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .payment {
+      background-color: $primaryBrightBlue;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 900;
+      color: white;
+      border-radius: 12px;
+      border-style: none;
+      padding: 1rem 8rem;
+      box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.3);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .payment:hover {
+    cursor: pointer;
+    background-color: $hover;
+  }
+
+  @media screen and (max-width: 480px) {
+    .cancel {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 900;
+      color: $neutralDesaturated;
+      border-style: none;
+      padding: 1.4rem 6rem;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .cancel {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 900;
+      color: $neutralDesaturated;
+      border-style: none;
+      padding: 1.9rem 8rem;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .cancel:hover {
+    cursor: pointer;
+    color: $hover;
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
