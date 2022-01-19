@@ -38,6 +38,7 @@ Users should be able to:
 - CSS custom properties
 - Media Queries
 - Flexbox
+- SCSS (Sass)
 - Mobile-first workflow
 
 ### What I learned
